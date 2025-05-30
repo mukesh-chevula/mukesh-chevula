@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mukesh Chevula Portfolio</title>
+
+    <link rel="shortcut icon" href="./logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./portrait.jpeg"
+              alt="Mukesh Chevula"
+              width="80"
+              style="border-radius: 50%"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Mukesh Chevula">Mukesh Chevula</h1>
+
+            <p class="title">CS Undergraduate at CBIT</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>More Details</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <div style="margin-top: 1.5rem">
+            <button class="download-resume-btn">
+              <div class="blob1"></div>
+              <div class="blob2"></div>
+              <a href="./Resume.pdf" class="large"
+                ><div class="inner">DOWNLOAD RESUME</div></a
+              >
+            </button>
+          </div>
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div
+                class="icon-box"
+                onclick="window.location.href='mailto:chevulamukesh@gmail.com'"
+              >
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:chevulamukesh@gmail.com" class="contact-link"
+                  >chevulamukesh@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div
+                class="icon-box"
+                onclick="window.location.href='tel:+916303021501'"
+              >
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+916303021501" class="contact-link"
+                  >+91 6303021501</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="2005-05-16">May 16, 2005</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Hyderabad, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/mukesh-chevula"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://github.com/mukesh-chevula" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/_.mukesh._.ch._/"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm a Full Stack Developer and AI/ML enthusiast based in
+              Hyderabad, India, passionate about building scalable systems and
+              intelligent applications. I thrive on transforming data into
+              insights and ideas into functional, performant products.
+            </p>
+
+            <p>
+              My focus is on developing end-to-end solutions that are not only
+              efficient and cleanly coded but also intuitive and impactful.
+              Whether it's crafting a responsive MERN stack application or
+              training a deep learning model, I blend engineering precision with
+              creative problem-solving. My goal is to create systems that solve
+              real-world problems and offer seamless user experiences across
+              platforms.
+            </p>
+          </section>
+
+          <section class="service">
+            <h3 class="h3 service-title">What I'm Doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Full Stack Development</h4>
+
+                  <p class="service-item-text">
+                    Building scalable and responsive MERN applications with
+                    clean architecture and modern UI/UX.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./icon-ai.png" alt="AI icon" width="40" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">AI & Machine Learning</h4>
+
+                  <p class="service-item-text">
+                    Designing intelligent systems using deep learning, computer
+                    vision, and NLP to solve real-world problems.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./icon-data.png"
+                    alt="Data analysis icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Data Science & Analysis</h4>
+
+                  <p class="service-item-text">
+                    Turning raw data into actionable insights using Python,
+                    Pandas, and advanced statistical methods.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./icon-leadership.png"
+                    alt="Leadership icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Leadership & Coordination
+                  </h4>
+
+                  <p class="service-item-text">
+                    Leading placement efforts and collaborating with industry
+                    for student opportunities and streamlined execution.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <div class="quote-section">
+              <figure class="quote-icon">
+                <img src="./icon-quote.svg" alt="Quote Icon" />
+              </figure>
+              <blockquote class="quote-text">
+                <h3 class="h3 article-title">
+                  Build with clarity, learn with intent, scale with
+                  intelligence.
+                </h3>
+              </blockquote>
+            </div>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img src="" data-modal-img />
+                </figure>
+              </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title></h4>
+
+                <div data-modal-text></div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <img src="./icon-exp.png" alt="AI Icon" />
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <div
+                  class="timeline-header"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <h4 class="h4 timeline-item-title" style="margin: 0">
+                    Freelance AI Evaluator – Soul AI
+                  </h4>
+                  <img
+                    src="./icon-soulai.jpeg"
+                    alt="AI Icon"
+                    style="border-radius: 50%"
+                    class="responsive-img"
+                  />
+                </div>
+                <span>Apr 2025 — Present</span>
+                <p class="timeline-text">
+                  Evaluated 20+ AI-generated responses across domains, ensuring
+                  100% accuracy in quality ratings.<br />
+                  Conducted structured scoring, comparison, and feedback to
+                  improve model alignment with user intent, coherence, and
+                  clarity.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <div
+                  class="timeline-header"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <h4 class="h4 timeline-item-title" style="margin: 0">
+                    Placement Coordinator – CBIT
+                  </h4>
+                  <img
+                    src="./icon-cbit.png"
+                    alt="Placement Icon"
+                    class="responsive-img"
+                  />
+                </div>
+                <span>Jan 2025 — Present</span>
+                <p class="timeline-text">
+                  SPOC for 2+ companies; coordinated placement activities for
+                  100+ students.<br />
+                  Ensured efficient communication, scheduling, and data handling
+                  between students and recruiting firms.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <div
+                  class="timeline-header"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <h4 class="h4 timeline-item-title" style="margin: 0">
+                    Data Science Intern – CodTech IT Solutions
+                  </h4>
+                  <img
+                    src="./icon-codtech.jpeg"
+                    alt="Data Icon"
+                    style="border-radius: 50%"
+                    class="responsive-img"
+                  />
+                </div>
+                <span>Jul 2024 — Aug 2024</span>
+                <p class="timeline-text">
+                  Engineered 15+ financial features from 10,000+ data points and
+                  optimised portfolios using Modern Portfolio Theory.<br />
+                  Boosted Sharpe Ratio by 20% and automated EDA and risk
+                  analysis pipelines using Python, Pandas, and Matplotlib.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <div
+                  class="timeline-header"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                  "
+                >
+                  <h4 class="h4 timeline-item-title" style="margin: 0">
+                    Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad
+                  </h4>
+                  <img
+                    src="./icon-cbit.png"
+                    alt="Placement Icon"
+                    class="responsive-img"
+                  />
+                </div>
+
+                <span>2022 - Present</span>
+                <p class="timeline-text">
+                  Pursuing B.E. in Computer Science and Engineering with a CGPA
+                  of <b>9.34</b>.<br />
+                  Gained strong foundations in Data Structures & Algorithms,
+                  DBMS, Operating Systems, Computer Networks, and Compiler
+                  Design.<br />
+                  Developed hands-on skills in Full Stack Development, AI/ML,
+                  and Data Science through academic and industry projects.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <div
+                  class="timeline-header"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <h4 class="h4 timeline-item-title" style="margin: 0">
+                    Narayana Junior College, Ramanthapur
+                  </h4>
+                  <img
+                    src="./icon-narayana.jpeg"
+                    alt="Narayana Icon"
+                    style="border-radius: 50%"
+                    class="responsive-img"
+                  />
+                </div>
+                <span>2020 - 2022</span>
+                <p class="timeline-text">
+                  Completed Intermediate with a percentage of <b>97.8%.</b
+                  ><br />
+                  Built a strong grounding in Mathematics, Physics, and
+                  Chemistry, forming a logical and analytical foundation
+                  essential for engineering problem-solving.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <div
+                  class="timeline-header"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <h4 class="h4 timeline-item-title" style="margin: 0">
+                    The Mother’s Integral High School, Ramanthapur
+                  </h4>
+                  <img
+                    src="./icon-school.jpeg"
+                    alt="School Icon"
+                    style="border-radius: 50%"
+                    class="responsive-img"
+                  />
+                </div>
+                <span>— 2020</span>
+                <p class="timeline-text">
+                  Completed 10th Grade with a perfect CGPA of <b>10.0 .</b
+                  ><br />
+                  Developed curiosity in programming and general science, laying
+                  the groundwork for a future in computer science.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My Skills</h3>
+
+            <ul class="skills-list content-card">
+              <li
+                class="skills-item"
+                style="display: flex; align-items: flex-start; gap: 1rem"
+              >
+                <div class="icon-box">
+                  <img src="/icon-python.png" alt="" srcset="" />
+                </div>
+                <div style="flex: 1">
+                  <div
+                    class="title-wrapper"
+                    style="display: flex; justify-content: space-between"
+                  >
+                    <h5 class="h5">Python</h5>
+                    <data value="90">90%</data>
+                  </div>
+                  <div class="skill-progress-bg" style="width: 100%">
+                    <div class="skill-progress-fill" style="width: 90%"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="skills-item"
+                style="display: flex; align-items: flex-start; gap: 1rem"
+              >
+                <div class="icon-box">
+                  <img src="/icon-java.png" alt="" srcset="" />
+                </div>
+                <div style="flex: 1">
+                  <div
+                    class="title-wrapper"
+                    style="display: flex; justify-content: space-between"
+                  >
+                    <h5 class="h5">Java</h5>
+                    <data value="80">80%</data>
+                  </div>
+                  <div class="skill-progress-bg" style="width: 100%">
+                    <div class="skill-progress-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="skills-item"
+                style="display: flex; align-items: flex-start; gap: 1rem"
+              >
+                <div class="icon-box">
+                  <img src="/icon-dsa.png" alt="" srcset="" />
+                </div>
+                <div style="flex: 1">
+                  <div
+                    class="title-wrapper"
+                    style="display: flex; justify-content: space-between"
+                  >
+                    <h5 class="h5">DSA</h5>
+                    <data value="80">80%</data>
+                  </div>
+                  <div class="skill-progress-bg" style="width: 100%">
+                    <div class="skill-progress-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="skills-item"
+                style="display: flex; align-items: flex-start; gap: 1rem"
+              >
+                <div class="icon-box">
+                  <img src="/icon-dev.svg" alt="" srcset="" />
+                </div>
+                <div style="flex: 1">
+                  <div
+                    class="title-wrapper"
+                    style="display: flex; justify-content: space-between"
+                  >
+                    <h5 class="h5">Full Stack (MERN)</h5>
+                    <data value="85">85%</data>
+                  </div>
+                  <div class="skill-progress-bg" style="width: 100%">
+                    <div class="skill-progress-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="skills-item"
+                style="display: flex; align-items: flex-start; gap: 1rem"
+              >
+                <div class="icon-box">
+                  <img src="/icon-ai.png" alt="" srcset="" />
+                </div>
+                <div style="flex: 1">
+                  <div
+                    class="title-wrapper"
+                    style="display: flex; justify-content: space-between"
+                  >
+                    <h5 class="h5">AI & ML</h5>
+                    <data value="75">75%</data>
+                  </div>
+                  <div class="skill-progress-bg" style="width: 100%">
+                    <div class="skill-progress-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="skills-item"
+                style="display: flex; align-items: flex-start; gap: 1rem"
+              >
+                <div class="icon-box">
+                  <img src="/icon-data.png" alt="" srcset="" />
+                </div>
+                <div style="flex: 1">
+                  <div
+                    class="title-wrapper"
+                    style="display: flex; justify-content: space-between"
+                  >
+                    <h5 class="h5">Data Science</h5>
+                    <data value="75">75%</data>
+                  </div>
+                  <div class="skill-progress-bg" style="width: 100%">
+                    <div class="skill-progress-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="skills-item"
+                style="display: flex; align-items: flex-start; gap: 1rem"
+              >
+                <div class="icon-box">
+                  <img src="/icon-database.png" alt="" srcset="" />
+                </div>
+                <div style="flex: 1">
+                  <div
+                    class="title-wrapper"
+                    style="display: flex; justify-content: space-between"
+                  >
+                    <h5 class="h5">MongoDB & MySQL</h5>
+                    <data value="80">80%</data>
+                  </div>
+                  <div class="skill-progress-bg" style="width: 100%">
+                    <div class="skill-progress-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <div class="">
+              <button class="" data-select></button>
+            </div>
+
+            <ul class="project-list">
+              <li class="project-item active">
+                <a
+                  href="https://github.com/mukesh-chevula/Machine-Learning-in-Finance"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="/ml_fin.svg"
+                      alt="Machine Learning in Finance"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Machine Learning in Finance</h3>
+                  <p class="project-category">Machine Learning</p>
+                </a>
+              </li>
+
+              <li class="project-item active">
+                <a
+                  href="https://github.com/mukesh-chevula/INDIASHOP"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="/ecommerce.svg"
+                      alt="MERN E-commerce"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">MERN E-commerce App</h3>
+                  <p class="project-category">Full Stack Development</p>
+                </a>
+              </li>
+
+              <li class="project-item active">
+                <a
+                  href="https://github.com/mukesh-chevula/TuToria"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./elearning.png" alt="Chess AI" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">Learning Management System</h3>
+                  <p class="project-category">Full Stack Development</p>
+                </a>
+              </li>
+
+              <li class="project-item active">
+                <a href="https://github.com/cbitosc/HTF24-Team-103">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./avid_minds.png"
+                      alt="AI Evaluator"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">
+                    AViD Minds - Healthcare Management App
+                  </h3>
+                  <p class="project-category">Applications</p>
+                  <p class="project-category">Machine Learning</p>
+                </a>
+              </li>
+
+              <li class="project-item active">
+                <a href="https://github.com/mukesh-chevula/Chess-Engine">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./chessai.png"
+                      alt="Data Science Internship"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Chess Engine</h3>
+                  <p class="project-category">Artificial Intelligence - CNN</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?q=Hyderabad&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                width="400"
+                height="300"
+                loading="lazy"
+                style="border: 0"
+                allowfullscreen=""
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form id="contact-form">
+              <div class="input-wrapper">
+                <input
+                  id="fullname"
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                id="message"
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <a href="mailto:chevulamukesh@gmail.com" class="send-message"
+                  >Send Message</a
+                >
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
